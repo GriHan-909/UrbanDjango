@@ -8,13 +8,9 @@
 <body>
     <h2>{{title}}</h2>
     <ul>
-        <li><h3>{{0m}} <button>Выбрать</button></h3></li>
-        <li><h3>{{1m}} <button>Выбрать</button></h3></li>
-        <li><h3>{{2m}} <button>Выбрать</button></h3></li>
-        <li><h3>{{3m}} <button>Выбрать</button></h3></li>
-        <li><h3>{{4m}} <button>Выбрать</button></h3></li>
-        <li><h3>{{5m}} <button>Выбрать</button></h3></li>
-        <li><h3>{{6m}} <button>Выбрать</button></h3></li>
+        {%for i in list_mark%}
+        <li><h3>{{i}} <button>Выбрать</button></h3></li>
+        {% endfor %}
     </ul>
     <a href='http://127.0.0.1:8000/#'><h2>Вернуться на главную</h2></a>
 </body>
