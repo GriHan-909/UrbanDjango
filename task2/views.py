@@ -1,8 +1,8 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
+def func_template(request):
+    return render(request, 'func_template.html')
 
-def func_index(request):
-    return render(request, 'index.html')
-
-def func_index2(request):
-    return render(request, 'index2.html')
+class ViewClassTemplate(TemplateView):
+    template_name = 'class_template.html'
