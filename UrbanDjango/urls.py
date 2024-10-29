@@ -25,7 +25,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('index', func_template),
     path('index2/', ViewClassTemplate.as_view()),
-    path('', TemplateView.as_view(template_name='third_task/start.html')),
+    # path('', TemplateView.as_view(template_name='third_task/start.html')),
+    path('', TemplateView.as_view(template_name='fourth_task/menu.html')),
     path('brand', func_brand),
     path('car_dealership', func_dealership)
 ]
