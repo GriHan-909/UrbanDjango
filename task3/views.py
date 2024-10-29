@@ -8,7 +8,7 @@ def func_brand(request):
         'list_mark': list_mark
     }
 
-    return render(request, 'brand.html', context)
+    return render(request, 'third_task/brand.html', context)
 
 def func_dealership(request):
     title = 'Список автосалонов'
@@ -18,4 +18,4 @@ def func_dealership(request):
         'dealerships':dealerships
     }
 
-    return render(request, 'car_dealership.html', context)
+    return render(request, 'third_task/car_dealership.html', context)
